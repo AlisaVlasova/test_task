@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { BlockType, ColumnData, ContentType, TextAlignType } from "shared/types";
+import { BlockType, ColumnData, ContentType, TextAlignType } from "../../../shared/types";
 import { SetContentType } from "./setContentType";
 import { AddTextAlign } from "./addTextAlign";
 import { AddText } from "./addText";

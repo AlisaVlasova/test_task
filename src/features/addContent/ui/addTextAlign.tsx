@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { FC } from "react";
-import { ColumnData, TextAlignType } from "shared/types";
+import { ColumnData, TextAlignType } from "../../../shared/types";
 import * as Icons from "./icons";
 
 interface IAddTextAlign {

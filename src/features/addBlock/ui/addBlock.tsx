@@ -1,8 +1,8 @@
-import { addColumn, addRow, selectRowListRows } from "entities/rowList";
+import { addColumn, addRow, selectRowListRows } from "../../../entities/rowList";
 import { FC } from "react";
-import { useAppDispatch, useAppSelector } from "shared/lib/store";
-import { BlockType, ColumnData, RowData } from "shared/types";
-import { ActionButton } from "shared/ui/actionButton";
+import { useAppDispatch, useAppSelector } from "../../../shared/lib/store";
+import { BlockType, ColumnData, RowData } from "../../../shared/types";
+import { ActionButton } from "../../../shared/ui/actionButton";
 
 interface IAddBlock {
   selectedRow: RowData | null;

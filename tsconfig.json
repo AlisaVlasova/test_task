@@ -6,14 +6,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "baseUrl": "src",
-    "paths": {
-      "app/*": ["app/*"],
-      "entities/*": ["entities/*"],
-      "features/*": ["features/*"],
-      "pages/*": ["pages/*"],
-      "shared/*": ["shared/*"],
-    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

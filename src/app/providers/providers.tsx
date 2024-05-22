@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Provider } from "react-redux";
-import { store, persistor } from "app/store";
+import { store, persistor } from "../../app/store";
 import { PersistGate } from "redux-persist/integration/react";
 
 interface IProviders {

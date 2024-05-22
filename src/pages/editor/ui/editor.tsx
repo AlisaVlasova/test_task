@@ -1,11 +1,11 @@
 import { FC, useState } from "react";
-import { Content } from "entities/content";
-import { ColumnData, RowData } from "shared/types";
-import { useAppSelector } from "shared/lib/store";
-import { Row, selectRowListRows } from "entities/rowList";
-import { Stage } from "entities/stage";
-import { Column } from "entities/column";
-import { Sidebar } from "widgets/sidebar";
+import { Content } from "../../../entities/content";
+import { ColumnData, RowData } from "../../../shared/types";
+import { useAppSelector } from "../../../shared/lib/store";
+import { Row, selectRowListRows } from "../../../entities/rowList";
+import { Stage } from "../../../entities/stage";
+import { Column } from "../../../entities/column";
+import { Sidebar } from "../../../widgets/sidebar";
 
 export const Editor: FC = () => {
   const [selectedRowId, setSelectedRowId] = useState<RowData["id"] | null>(null);

@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { FC } from "react";
-import { ColumnData, ContentType } from "shared/types";
+import { ColumnData, ContentType } from "../../../shared/types";
 import * as Icons from "./icons";
 
 interface ISetContentType {

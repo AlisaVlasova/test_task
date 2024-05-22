@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IRowListInitialState, Payload } from "./types";
+import { ColumnPayload, IRowListInitialState } from "./types";
+import { RowData } from "../../../shared/types";
 
 const initialState: IRowListInitialState = {
   rows: [],
@@ -9,10 +10,10 @@ export const rowsSlice = createSlice({
   name: "rowList",
   initialState,
   reducers: {
-    addRow: (state, { payload }: PayloadAction<Payload["ADD_ROW"]>) => {
+    addRow: (state, { payload }: PayloadAction<RowData>) => {
       state.rows = [...state.rows, payload];
     },
-    addColumn: (state, { payload }: PayloadAction<Payload["ADD_COLUMN"]>) => {
+    addColumn: (state, { payload }: PayloadAction<ColumnPayload>) => {
       const selectedRow = state.rows.find((row) => row.id === payload.rowId) || state.rows.at(-1);
 
       if (!selectedRow) {
@@ -28,7 +29,7 @@ export const rowsSlice = createSlice({
 
       selectedRow.columns = updatedColumns;
     },
-    updateColumn: (state, { payload }: PayloadAction<Payload["UPDATE_COLUMN"]>) => {
+    updateColumn: (state, { payload }: PayloadAction<ColumnPayload>) => {
       const selectedRow = state.rows.find((row) => row.id === payload.rowId) || state.rows.at(-1);
 
       if (!selectedRow) {

@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { FC } from "react";
-import { IContent, ContentType, TextAlignType } from "shared/types";
+import { IContent, ContentType, TextAlignType } from "../../../shared/types";
 import { Markdown } from "./markdown";
 import { ImageContainer } from "./imageContainer";
 

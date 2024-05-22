@@ -1,9 +1,9 @@
-import { selectRowListRows, updateColumn } from "entities/rowList";
-import { AddBlock } from "features/addBlock";
-import { AddContent } from "features/addContent";
+import { selectRowListRows, updateColumn } from "../../entities/rowList";
+import { AddBlock } from "../../features/addBlock";
+import { AddContent } from "../../features/addContent";
 import { FC, useMemo } from "react";
-import { useAppDispatch, useAppSelector } from "shared/lib/store";
-import { ColumnData, RowData } from "shared/types";
+import { useAppDispatch, useAppSelector } from "../../shared/lib/store";
+import { ColumnData, RowData } from "../../shared/types";
 
 export interface ISidebar {
   onSelectRow(id: RowData["id"]): void;

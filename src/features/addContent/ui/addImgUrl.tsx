@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ColumnData } from "shared/types";
+import { ColumnData } from "../../../shared/types";
 
 interface IAddImgUrl {
   onAction(text: ColumnData["content"]["text"]): void;

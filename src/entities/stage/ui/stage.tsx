@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { FC } from "react";
-import { SelectableContainer } from "shared/ui/selectableContainer";
+import { SelectableContainer } from "../../../shared/ui/selectableContainer";
 
 export interface StageProps {
   children?: React.ReactNode;
