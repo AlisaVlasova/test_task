@@ -7,6 +7,10 @@
   font-style: oblique italic;
 }
 
+.App {
+  min-height: 100vh;
+}
+
 html,
 body,
 #root {
